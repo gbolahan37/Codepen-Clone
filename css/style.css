@@ -370,9 +370,6 @@ nav{
     height: 40px;
 
 }
-#profile-img:hover{
-    
-}
 .project-name{
     font-family: 'Poppins' sans-serif;
     font-size: 18px;
@@ -402,6 +399,7 @@ nav{
     background-color: #18191E;
     padding: 20px;
     height: 700px;
+    overflow: hidden;
 }
 .dizz{
     padding: 20px;
@@ -443,8 +441,29 @@ nav{
 }
 .sidebar-image{
     width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
 }
-
+@keyframes bottom-to-top {
+    from{
+        transform: translateY(400px);
+    }
+    to{
+        transform: translateY(0 );
+    }
+}
+.side-img{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    bottom: -400px;
+}
+.move{
+    transform: translateY(-400px);
+    transition: transform 2s;
+    /* animation: bottom-to-top 2s; */
+}
 .sidebar-item{
     background-color: #17181D;
     padding: 20px;
@@ -558,6 +577,6 @@ nav{
     font-weight: 400;
     margin-bottom: 30px;
 }
-.dizz{
 
-}
+
+
