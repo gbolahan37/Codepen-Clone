@@ -621,6 +621,10 @@ nav{
     color: #000000;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+        background-color: #32b05a;
+    }
 }
 .foot-btn{
     display: flex;
