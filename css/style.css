@@ -558,6 +558,9 @@ nav{
     gap: 32px;
     align-items: center;
     border-radius: 4px;
+    @media (max-width: 675px) {
+        display: block;
+    }
     
 }
 #atlas-img{
@@ -568,7 +571,10 @@ nav{
     font-size: 1.3rem;
     color: #FFFFFF;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    @media (max-width: 675px) {
+        margin-top: 25px;
+    }
 }
 .atlas-paragraph{
     font-family: "Lato", sans-serif;
@@ -578,5 +584,75 @@ nav{
     margin-bottom: 30px;
 }
 
-
-
+.footer{
+    margin-top: 90px;
+    padding: 25px;
+    background-color: #1E1F26;
+    width: 100%;
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+.footer-header{
+    color: #FFFFFF;
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.foot-para{
+    display: flex;
+    justify-content: center;
+}
+.footer-text{
+    color: #D5D7DE;
+    text-align: center;
+    max-width: 500px;
+    font-family: 'Inter' sans-serif;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.footer-btn{
+    font-size: 16px;
+    padding: 15px 25px;
+    background-color: #47CF73;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+}
+.foot-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.footer-subtitle{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.team-section{
+    margin-top: 19px;
+}
+.team-container{
+    display: flex;
+    justify-content: center;
+}
+.teams{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /* max-width: 570px; */
+}
+.teams img{
+    height:40px;
+}
+.footer-bottom{
+    background-color: #010101;
+    padding: 30px;
+}
